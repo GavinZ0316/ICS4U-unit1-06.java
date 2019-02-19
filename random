@@ -1,0 +1,31 @@
+/****************************************************
+*Daily assignment1-06
+*Created by Gavin Zhou
+*Created on 2019-02-15
+*This program is a game called random
+*This program is using for pick a random number between range
+*****************************************************/
+
+import java.util.Random;
+
+class random {
+	 public static void main(String[] args) {
+	 	// the maximum of number is 666
+		 RollDie(666);
+         
+	 }
+	 
+	 public static void RollDie(int maxValue) {
+	 	// a symbol called number
+         int number;
+
+		// random number = dice
+		 Random pick = new Random();	 
+		 number = pick.nextInt(maxValue);
+
+		// outprint the answer
+		 System.out.println("The maximum number is  " + maxValue);
+		 System.out.println("The random number is  " + number);
+	 }
+
+}
